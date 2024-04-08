@@ -13,7 +13,7 @@ driver.get("https://updeepsingh.github.io/webpage/")  # Update this with the pat
 time.sleep(2)  # Adding a delay to see the result
 
 # Assert some condition to verify the result
-assert "Coffee House" in driver.title
+assert "Coffee Shop" in driver.title
 
 # Take a screenshot
 timestamp = time.strftime("%Y%m%d-%H%M%S")
