@@ -79,6 +79,7 @@ jobs:
           git commit -m "Add screenshot taken during Selenium test"
           git push
   deploy:
+    needs: test
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
